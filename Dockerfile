@@ -18,3 +18,7 @@ COPY .  .
 
 # Now that requirements.txt is copied into the image, use pip to install the packages in the file.
 RUN pip install -r requirements.txt
+
+# If you would like to have the image run more commands upon initialization, add more RUN commands. These commands
+# can be any command you would normally be able to run in this enviroment, including calling the python script or
+# running bcftools.
